@@ -1,0 +1,38 @@
+
+<form method="POST">
+    <label>city</label>
+    <input type="text" name="city"> <br> <br>
+    <label>min price</label>
+    <input type="text" name="minprice"> <br>
+    <label>max price</label>
+    <input type="text" name="maxprice"> <br> <br>
+    <label>check in/out date must be in format YYYY/MM/DD</label> <br> <br>
+    <label>check in date</label>
+    <input type="text" name="checkin"> <br>
+    <label>check out date</label>
+    <input type="text" name="checkout"> <br>
+    <h2><button type="submit">Submit</button></h2>
+</form>
+
+<table style="border-spacing: 10px;">
+
+    <tbody>
+    {% if titles %}
+    <tr>
+        {% for item in titles %}
+            <th>{{item}}</th>
+    {% endfor %}
+    </tr>
+    
+    {% endif %}
+    {% for item2 in data %}
+</tr>
+    {% for key, value in item2.items() %}
+         <td> {{ value }} </td>
+     
+    {% endfor %}
+</tr>
+    {% endfor %}
+
+    </tbody>
+  </table>

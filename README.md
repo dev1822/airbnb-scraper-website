@@ -9,7 +9,8 @@ Made using scrapy and flask
 
 
 To run, navigate to airbnb-scraper-master/site and run python3 main.py 
-\nRequirements:
+
+Requirements:
 - scrapy
 - flask
 - json
